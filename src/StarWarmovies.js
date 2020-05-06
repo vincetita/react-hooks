@@ -8,6 +8,7 @@ export default function StarWarmovies() {
 
     useEffect(() => {
         async function getData(){
+            //url changed from https://swapi.co/api/films/ to https://swapi.dev/api/films/
             const response = await axios.get(`https://swapi.dev/api/films/${number}/`)
             setMovie(response.data)
            // console.log(response.data.title)
